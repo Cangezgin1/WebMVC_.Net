@@ -8,4 +8,5 @@
   <li>Entity Framework</li>
   <li>MVC Pattern</li>
   <li>Codefirst</li>
+  <li>MSSQL</li>
 </ul>
