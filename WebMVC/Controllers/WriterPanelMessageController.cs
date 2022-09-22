@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Concrete;
 using BusinessLayer.ValidationRules;
+using DataAccsesLayer.Concrete;
 using DataAccsesLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
@@ -16,7 +17,7 @@ namespace WebMVC.Controllers
 
         MessageManager mm = new MessageManager(new EfMessageDal());
         MessageValidator messageValidator = new MessageValidator();
-
+        Context c = new Context();
 
         public ActionResult Index()
         {
@@ -28,13 +29,17 @@ namespace WebMVC.Controllers
 
         public ActionResult Inbox()
         {
-            var messageListIn = mm.GetListInbox();
+            string p = (string)Session["WriterMail"];
+            var writeridinfo = c.Writers.Where(x => x.WriterMail == p).Select(y => y.WriterID).FirstOrDefault();
+            var messageListIn = mm.GetListInbox(p);
             return View(messageListIn);
         }
 
         public ActionResult Sendbox()
         {
-            var messageListSend = mm.GetListSendbox();
+            string p = (string)Session["WriterMail"];
+            var writeridinfo = c.Writers.Where(x => x.WriterMail == p).Select(y => y.WriterID).FirstOrDefault();
+            var messageListSend = mm.GetListSendbox(p);
             return View(messageListSend);
         }
 
@@ -79,10 +84,12 @@ namespace WebMVC.Controllers
         [HttpPost]
         public ActionResult NewMessage(Message message)
         {
+            string sender = (string)Session["WriterMail"];
+
             ValidationResult result = messageValidator.Validate(message);
             if (result.IsValid)
             {
-                message.SenderMail = "Deneme@gmail.com";
+                message.SenderMail = sender;
                 message.MessageDate = DateTime.Parse(DateTime.Now.ToShortDateString());
                 mm.MessageAdd(message);
                 return RedirectToAction("SendBox");

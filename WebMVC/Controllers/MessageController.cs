@@ -17,15 +17,15 @@ namespace WebMVC.Controllers
         MessageValidator messageValidator = new MessageValidator();
 
 
-        public ActionResult Inbox()
+        public ActionResult Inbox(string p)
         {
-            var messageListIn = mm.GetListInbox();
+            var messageListIn = mm.GetListInbox(p);
             return View(messageListIn);
         }
 
-        public ActionResult Sendbox()
+        public ActionResult Sendbox(string p)
         {
-            var messageListSend = mm.GetListSendbox();
+            var messageListSend = mm.GetListSendbox(p);
             return View(messageListSend);
         }
 
