@@ -12,24 +12,27 @@ namespace WebMVC.Controllers
     public class ContentController : Controller
     {
         ContentManager cm = new ContentManager(new EfContentDal());
-        Context c = new Context();
 
+        Context c = new Context();
 
         public ActionResult Index()
         {
             return View();
         }
 
+
+        [HttpGet]
+        public ActionResult GetAllContent()
+        {
+            string p = "";
+            var values = cm.GetList(p);
+            return View(values.ToList());
+        }
+        [HttpPost]
         public ActionResult GetAllContent(string p)
         {
-            p = "Çok";
-            var values = from x in c.Contents select x;
-            if (!string.IsNullOrEmpty(p))
-            {
-                values = values.Where(y => y.ConcentValue.Contains(p));
-            }
-            //var values = c.Contents.ToList();
-            return View(values.ToString());
+            var values = cm.GetList(p);
+            return View(values.ToList());
         }
             
 
@@ -38,7 +41,5 @@ namespace WebMVC.Controllers
             var contentvalues = cm.GetListByHeadingID(id);
             return View(contentvalues);
         }
-
-
     }
 }

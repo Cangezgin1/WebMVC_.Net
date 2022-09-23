@@ -25,6 +25,13 @@ namespace WebMVC.Controllers
             return View(headingvalues);
         }
 
+
+        public ActionResult HeadingReport()
+        {
+            var headingvalues = hm.GetList();
+            return View(headingvalues);
+        }
+
         #region ActionResult to !!!  Add  !!! Heading
 
         [HttpGet]
