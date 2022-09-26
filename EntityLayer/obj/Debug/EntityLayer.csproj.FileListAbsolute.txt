@@ -9,4 +9,3 @@ C:\Users\User\Desktop\WebMVC\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompil
 C:\Users\User\Desktop\WebMVC\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
 C:\Users\User\Desktop\WebMVC\EntityLayer\obj\Debug\EntityLayer.dll
 C:\Users\User\Desktop\WebMVC\EntityLayer\obj\Debug\EntityLayer.pdb
-C:\Users\User\Desktop\WebMVC\EntityLayer\obj\Debug\EntityLayer.csproj.AssemblyReference.cache

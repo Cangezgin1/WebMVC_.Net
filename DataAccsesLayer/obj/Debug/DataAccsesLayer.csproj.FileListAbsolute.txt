@@ -25,3 +25,5 @@ C:\Users\User\Desktop\WebMVC\DataAccsesLayer\obj\Debug\DataAccsesLayer.Migration
 C:\Users\User\Desktop\WebMVC\DataAccsesLayer\obj\Debug\DataAccsesLayer.Migrations.mig_contact_adddate.resources
 C:\Users\User\Desktop\WebMVC\DataAccsesLayer\obj\Debug\DataAccsesLayer.Migrations.mig_addimageFile.resources
 C:\Users\User\Desktop\WebMVC\DataAccsesLayer\obj\Debug\DataAccsesLayer.Migrations.mig_add_admin_table.resources
+C:\Users\User\Desktop\WebMVC\DataAccsesLayer\obj\Debug\DataAccsesLayer.Migrations.mig_addAdminStatü.resources
+C:\Users\User\Desktop\WebMVC\DataAccsesLayer\obj\Debug\DataAccsesLayer.Migrations.mig_updateAdminStatü.resources

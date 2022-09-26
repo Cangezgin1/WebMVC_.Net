@@ -1,0 +1,36 @@
+﻿
+@model EntityLayer.Concrete.Admin
+
+@{
+    ViewBag.Title = "AddAdmin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Yeni Admin Ekleme</h1>
+<br />
+@using (Html.BeginForm("AddAdmin", "Authorization", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Admin Mail")
+        @Html.TextBoxFor(x => x.AdminUserName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.AdminUserName)
+        <br />
+        @Html.Label("Admin Şifre")
+        @Html.TextBoxFor(x => x.AdminUserPassword, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.AdminUserPassword)
+        <br />
+        @Html.Label("Admin Rol")
+        @Html.DropDownListFor(x => x.AdminRole, new List<SelectListItem>
+                     { new SelectListItem{Text="A", Value="A"},
+                       new SelectListItem{Text="B", Value="B"}}, "Lütfen seçiniz")
+        @Html.ValidationMessageFor(x => x.AdminRole)
+        <br />
+        @Html.Label("Admin Statü")
+        @Html.DropDownListFor(x => x.AdminStatü, new List<SelectListItem>
+                     { new SelectListItem{Text="True", Value="1"},
+                       new SelectListItem{Text="False", Value="0"}}, "Lütfen seçiniz")
+        @Html.ValidationMessageFor(x => x.AdminStatü)
+        <br />
+        <button class="btn btn-dark">Admini Ekle</button>
+    </div>
+}

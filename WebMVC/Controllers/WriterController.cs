@@ -25,7 +25,8 @@ namespace WebMVC.Controllers
         }
 
 
-        #region ActionResult to !!!  Add  !!! Writer
+
+
 
         [HttpGet]
         public ActionResult AddWriter()
@@ -52,10 +53,11 @@ namespace WebMVC.Controllers
             }
             return View();
         }
-        #endregion
 
 
-        #region ActionResult to !!!  EDİT  !!! Writer
+
+
+
 
         [Route("{id}")]
         public ActionResult EditWriter(int id)
@@ -81,7 +83,5 @@ namespace WebMVC.Controllers
             }
             return View();
         }
-
-        #endregion
     }
 }

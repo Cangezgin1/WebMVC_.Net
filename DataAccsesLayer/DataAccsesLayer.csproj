@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IAboutDal.cs" />
+    <Compile Include="Abstract\IAdminDal.cs" />
     <Compile Include="Abstract\ICategoryDal.cs" />
     <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IContentDal.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repositories\GenericRepository.cs" />
     <Compile Include="EntityFramework\EfAboutDal.cs" />
+    <Compile Include="EntityFramework\EfAdminDal.cs" />
     <Compile Include="EntityFramework\EfCategoryDal.cs" />
     <Compile Include="EntityFramework\EfContactDal.cs" />
     <Compile Include="EntityFramework\EfContentDal.cs" />
@@ -114,6 +116,14 @@
     <Compile Include="Migrations\202209070754491_mig_add_admin_table.designer.cs">
       <DependentUpon>202209070754491_mig_add_admin_table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202209260726357_mig_addAdminStatü.cs" />
+    <Compile Include="Migrations\202209260726357_mig_addAdminStatü.designer.cs">
+      <DependentUpon>202209260726357_mig_addAdminStatü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202209260729556_mig_updateAdminStatü.cs" />
+    <Compile Include="Migrations\202209260729556_mig_updateAdminStatü.designer.cs">
+      <DependentUpon>202209260729556_mig_updateAdminStatü.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -160,6 +170,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202209070754491_mig_add_admin_table.resx">
       <DependentUpon>202209070754491_mig_add_admin_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202209260726357_mig_addAdminStatü.resx">
+      <DependentUpon>202209260726357_mig_addAdminStatü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202209260729556_mig_updateAdminStatü.resx">
+      <DependentUpon>202209260729556_mig_updateAdminStatü.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
