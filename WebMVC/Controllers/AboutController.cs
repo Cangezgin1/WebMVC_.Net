@@ -12,7 +12,7 @@ namespace WebMVC.Controllers
     public class AboutController : Controller
     {
         AboutManager abm = new AboutManager(new EfAboutDal());
-        
+
         public ActionResult Index()
         {
             var aboutvalues = abm.GetList();
