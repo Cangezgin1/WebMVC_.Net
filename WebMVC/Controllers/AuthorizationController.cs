@@ -25,7 +25,7 @@ namespace WebMVC.Controllers
 
 
 
-
+        // VERİ EKLENMESİ 
         [HttpGet]
         public ActionResult AddAdmin()
         {
@@ -53,7 +53,7 @@ namespace WebMVC.Controllers
 
 
 
-
+        // Verilerin Update işlemi
         public ActionResult EditAdmin(int id)
         {
             var adminvalues = am.GetById(id);
@@ -68,7 +68,7 @@ namespace WebMVC.Controllers
 
 
 
-
+        // Veri silinmesi
         public ActionResult DeleteAdmin(int id)
         {
             var adminvalues = am.GetById(id);
@@ -80,7 +80,7 @@ namespace WebMVC.Controllers
 
 
 
-
+        // Adminlerin Aktif pasif yapılması
         public ActionResult AktifAdmin(int id)
         {
             var adminvalues = am.GetById(id);

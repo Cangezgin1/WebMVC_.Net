@@ -11,13 +11,18 @@ namespace WebMVC.Controllers
 {
     public class AboutController : Controller
     {
+
         AboutManager abm = new AboutManager(new EfAboutDal());
+
+        // Veri tabanından bilgilerin getirilmesi
 
         public ActionResult Index()
         {
             var aboutvalues = abm.GetList();
             return View(aboutvalues);
         }
+
+        // Veri ekleme
 
         [HttpGet]
         public ActionResult AddAbout()
@@ -31,6 +36,8 @@ namespace WebMVC.Controllers
             abm.AboutAdd(p);
             return RedirectToAction("Index");
         }
+
+
 
         public PartialViewResult AboutPartial()
         {
