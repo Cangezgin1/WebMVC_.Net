@@ -86,6 +86,7 @@
     <Compile Include="ValidationRules\ContactValidator.cs" />
     <Compile Include="ValidationRules\MessageValidator.cs" />
     <Compile Include="ValidationRules\WriterValidator.cs" />
+    <Compile Include="ValidationRules\WriterValidator2.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccsesLayer\DataAccsesLayer.csproj">
