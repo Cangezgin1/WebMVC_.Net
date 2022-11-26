@@ -56,3 +56,4 @@ C:\Users\User\Desktop\Can\WebMVC\DataAccsesLayer\obj\Debug\DataAccsesLayer.cspro
 C:\Users\User\Desktop\Can\WebMVC\DataAccsesLayer\obj\Debug\DataAccsesLayer.csproj.CopyComplete
 C:\Users\User\Desktop\Can\WebMVC\DataAccsesLayer\obj\Debug\DataAccsesLayer.dll
 C:\Users\User\Desktop\Can\WebMVC\DataAccsesLayer\obj\Debug\DataAccsesLayer.pdb
+C:\Users\User\Desktop\Can\WebMVC\DataAccsesLayer\obj\Debug\DataAccsesLayer.Migrations.mig_WriterBool.resources

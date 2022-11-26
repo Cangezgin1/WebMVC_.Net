@@ -124,6 +124,10 @@
     <Compile Include="Migrations\202209260729556_mig_updateAdminStatü.designer.cs">
       <DependentUpon>202209260729556_mig_updateAdminStatü.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202211261022355_mig_WriterBool.cs" />
+    <Compile Include="Migrations\202211261022355_mig_WriterBool.designer.cs">
+      <DependentUpon>202211261022355_mig_WriterBool.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -176,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202209260729556_mig_updateAdminStatü.resx">
       <DependentUpon>202209260729556_mig_updateAdminStatü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211261022355_mig_WriterBool.resx">
+      <DependentUpon>202211261022355_mig_WriterBool.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

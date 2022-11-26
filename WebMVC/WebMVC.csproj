@@ -2879,6 +2879,7 @@
     <Content Include="SignUp-Template\scss\layouts\main.scss" />
     <Content Include="SignUp-Template\scss\layouts\responsive.scss" />
     <Content Include="SignUp-Template\scss\style.scss" />
+    <Content Include="Views\Register\SignUp.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

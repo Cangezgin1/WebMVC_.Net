@@ -19,27 +19,28 @@ namespace WebMVC.Controllers
 
         [AllowAnonymous]
         [HttpGet]
-        public ActionResult KayıtOl()
+        public ActionResult KayıtOl() // KayıtOl View sayfası duruyor.
         {
             return View();
         }
+        [AllowAnonymous]
         [HttpPost]
         public ActionResult KayıtOl(Writer p)
         {
-            //ValidationResult result = writervalidator.Validate(p);
-            //if (result.IsValid)
-            //{
+            ValidationResult result = writervalidator.Validate(p);
+            if (result.IsValid)
+            {
                 wm.WriterAdd(p);
-                return RedirectToAction("WriterLogin","Login");
-            //}
-            //else
-            //{
-            //    foreach (var item in result.Errors)
-            //    {
-            //        ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
-            //    }
-            //}
-            //return View();
+                return RedirectToAction("WriterLogin", "Login");
+            }
+            else
+            {
+                foreach (var item in result.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
         }
     }
 }

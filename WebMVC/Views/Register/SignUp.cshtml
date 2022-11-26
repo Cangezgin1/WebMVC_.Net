@@ -1,0 +1,44 @@
+﻿
+@model EntityLayer.Concrete.Writer
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SignUp</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body style="background-color:brown;text-align:center">
+    @using (Html.BeginForm("SignUp", "Register", FormMethod.Post))
+     {
+        <div class="form-group" style="text-align:center; width: 250px; height: 250px; color: white;">
+            @Html.Label("İsmi")
+            @Html.TextBoxFor(x => x.WriterName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.WriterName)
+            <br />
+            <br />
+            @Html.Label("Soyisim")
+            @Html.TextBoxFor(x => x.WriterSurName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.WriterSurName)
+            <br />
+            <br />
+            @Html.Label("Mail Adresi")
+            @Html.TextBoxFor(x => x.WriterMail, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.WriterMail)
+            <br />
+            <br />
+            @Html.Label("Şifre")
+            @Html.TextBoxFor(x => x.WriterPassword, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.WriterPassword)
+            <br />
+            <br />
+            <button class="btn btn-success">Üye Ol</button>
+        </div>
+
+     }
+</body>
+</html>
