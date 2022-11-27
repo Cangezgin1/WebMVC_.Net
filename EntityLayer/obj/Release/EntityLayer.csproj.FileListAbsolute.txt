@@ -10,3 +10,15 @@ C:\Users\User\Desktop\WebMVC\EntityLayer\obj\Release\EntityLayer.csproj.CoreComp
 C:\Users\User\Desktop\WebMVC\EntityLayer\obj\Release\EntityLayer.csproj.CopyComplete
 C:\Users\User\Desktop\WebMVC\EntityLayer\obj\Release\EntityLayer.dll
 C:\Users\User\Desktop\WebMVC\EntityLayer\obj\Release\EntityLayer.pdb
+C:\Users\User\Desktop\Can\WebMVC\EntityLayer\bin\Release\EntityLayer.dll.config
+C:\Users\User\Desktop\Can\WebMVC\EntityLayer\bin\Release\EntityLayer.dll
+C:\Users\User\Desktop\Can\WebMVC\EntityLayer\bin\Release\EntityLayer.pdb
+C:\Users\User\Desktop\Can\WebMVC\EntityLayer\bin\Release\EntityFramework.dll
+C:\Users\User\Desktop\Can\WebMVC\EntityLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Can\WebMVC\EntityLayer\bin\Release\EntityFramework.xml
+C:\Users\User\Desktop\Can\WebMVC\EntityLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\Can\WebMVC\EntityLayer\obj\Release\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Can\WebMVC\EntityLayer\obj\Release\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Can\WebMVC\EntityLayer\obj\Release\EntityLayer.csproj.CopyComplete
+C:\Users\User\Desktop\Can\WebMVC\EntityLayer\obj\Release\EntityLayer.dll
+C:\Users\User\Desktop\Can\WebMVC\EntityLayer\obj\Release\EntityLayer.pdb

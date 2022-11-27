@@ -21,6 +21,6 @@
 <br />
 @foreach (var item in Model)
 {
-    <p style="text-align: center; color: brown; font-family: 'Times New Roman'; font-weight: bold;font-size:large">@item.ConcentValue</p>
+    <p style="text-align: center; color: brown; font-family: 'Times New Roman'; font-weight: bold;font-size:large">(@item.Writer.WriterName )= @item.ConcentValue</p>
 }
 
