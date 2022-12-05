@@ -11,4 +11,4 @@
   <li>MSSQL</li>
 </ul>
 
-<p> https://www.youtube.com/watch?v=vva578ivRyQ </p>
+<p> https://www.youtube.com/watch?v=vva578ivRyQ </p><p>Videonun dışında Üye ol kısmı yapıldı ve iyileştirmeler yapıldı.</p>
